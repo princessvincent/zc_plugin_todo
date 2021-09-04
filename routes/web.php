@@ -58,6 +58,8 @@ Route::get('/task/assign', function(){
 Route::get('/comment/{id}',[TaskCommentController::class,'findTaskCommentById']);
 Route::get('/task/comment/{id}',[TaskCommentController::class,'findTaskCommentByIdTest']);
 
+Route::get('/delete_comment/{id}',[TaskCommentController::class,'delete']);
+
 //Resource route
 Route::get('/todo_resource', [TodoController::class, 'showResource']);
 

@@ -31,6 +31,7 @@ use App\Http\Controllers\TaskController;
 // TaskCommentController
 
 Route::delete('comment_delete/{id}', [\App\Http\Controllers\TaskCommentController::class,'delete']);
+
 Route::post('files', [UploadFilesController::class, 'upLoadFiles']);
 
 Route::get('task-category',[TaskController::class,'getTasksByCategory']);
